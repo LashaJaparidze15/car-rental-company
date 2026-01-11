@@ -1,0 +1,53 @@
+# PHP Configuration Files
+db.inc.php
+config.php
+.env
+.env.local
+
+# IDE and Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.netbeans/
+nbproject/
+
+# OS Files
+.DS_Store
+Thumbs.db
+.directory
+
+# Logs
+*.log
+logs/
+
+# Temporary and Cache Files
+*.tmp
+tmp/
+temp/
+cache/
+*.swp
+*.swo
+*~
+.sass-cache/
+
+# Session Files
+sessions/
+*.sess
+
+# Uploads (if applicable)
+uploads/
+downloads/
+
+# Composer dependencies
+vendor/
+composer.lock
+
+# Node modules (if using npm for frontend)
+node_modules/
+package-lock.json
+
+# SSL/Certificate files
+*.pem
+*.key
+*.cert
