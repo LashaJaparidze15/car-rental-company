@@ -1,112 +1,74 @@
-# Web Projects
+🚗 Car Management Module – Car Rental System
+This module is part of a collaborative car rental web application developed using PHP and MySQL. It focuses on the management of car records, allowing administrators to add, delete, view, and amend car details, as well as generate comprehensive car reports.
 
-A collection of web development projects built with PHP, MySQL, HTML, CSS, and JavaScript.
+🔧 Features
+Add Car: Input new car details into the system.
 
-## Projects
+Delete Car: Remove existing car records.
 
-### PHP Car Rental Company
+View/Amend Car: Display car information with options to update details.
 
-A complete car rental management system featuring vehicle inventory management, customer bookings, and rental transactions.
+Car Report: Generate reports listing all cars, with sorting and filtering capabilities.
 
-**Tech Stack:**
-- Backend: PHP with MySQL database
-- - Frontend: HTML5, CSS3, JavaScript
-- - Database: MySQL with relational schema
-   
-- **Features:**
-- - Vehicle inventory management
-- - Customer registration and management
-- - Booking and reservation system
-- - Payment processing
-- - Rental history and reports
-- - Admin dashboard for management
-               
-- **Project Structure:**
-- ```
-PHP_Car_Rental_Company/
-├── index.php
-├── config/
-│   └── database.php
-├── pages/
-│   ├── login.php
-│   ├── vehicles.php
-│   ├── bookings.php
-│   └── admin/
-├── includes/
-│   ├── header.php
-│   └── footer.php
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-└── database/
-└── schema.sql
-```
+Shared Components: Includes a common header and landing page for consistent navigation.
+Scribd
+www.slideshare.net
 
-## Getting Started
+🗄️ Database Schema
+The module utilizes a MySQL database with the following table:
 
-### Prerequisites
-- PHP 7.4 or higher
-- - MySQL 5.7 or higher
-- - Web server (Apache/Nginx)
-- - Modern web browser
-                       
-- ### Installation
-                       
-- 1. **Clone the repository**
-2. ```bash
-git clone https://github.com/LashaJaparidze15/Web_Projects.git
-cd Web_Projects/PHP_Car_Rental_Company
-```
+Car:
 
-2. **Database Setup**
-3. - Create a new MySQL database
-- - Import the `database/schema.sql` file
-- - Update database credentials in `config/database.php`
-                                   
-- 3. **Configuration**
-4. ```php
-// config/database.php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', 'your_password');
-define('DB_NAME', 'car_rental');
-```
+car_id (INT, Primary Key)
 
-4. **Run the Application**
-5. - Place the project in your web server root directory
-- - Access via: `http://localhost/Web_Projects/PHP_Car_Rental_Company`
-                                             
-- ## Usage
-                                             
-- ### Customer Operations
-- - Register a new account
-- - Browse available vehicles
-- - Check vehicle details and pricing
-- - Make bookings for desired dates
-- - View booking history
-- - Download rental invoices
-                                                         
-- ### Admin Operations
-- - Manage vehicle inventory
-- - Add/edit/delete vehicles
-- - View all bookings
-- - Generate reports
-- - Manage customer accounts
-- - Process rental confirmations
-                                                                     
-- ## Contributing
-                                                                     
-- 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit changes (`git commit -m 'Add new feature'`)
-4. Push to branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
-                                                                                   
-## License
-                                                                                   
-This project is licensed under the MIT License.
-                                                                                   
-## Author
-                                                                                   
-Created by Lasha Japaridze
+make (VARCHAR)
+
+model (VARCHAR)
+
+year (YEAR)
+
+color (VARCHAR)
+
+rental_price (DECIMAL)
+
+availability_status (BOOLEAN)
+
+Refer to schema.sql for the complete table structure and sample data.
+
+🚀 Installation & Setup
+Clone the Repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/car-management-module.git
+cd car-management-module
+Database Setup:
+
+Create a MySQL database named car_rental.
+
+Import the schema.sql file:
+
+bash
+Copy
+Edit
+mysql -u your_username -p car_rental < schema.sql
+Configure Database Connection:
+
+Open db.inc.php and update the database credentials:
+
+php
+Copy
+Edit
+$host = 'localhost';
+$username = 'your_username';
+$password = 'your_password';
+$database = 'car_rental';
+Deploy to Web Server:
+
+Place the project folder in your web server's root directory (e.g., htdocs for XAMPP).
+
+Ensure the server is running and navigate to http://localhost/car-management-module/ in your browser.
+
+👤 Author
+Lasha Japaridze – lashajapara68@gmail.com
