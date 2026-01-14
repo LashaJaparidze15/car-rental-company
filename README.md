@@ -189,8 +189,7 @@ Contributions are welcome! To contribute:
 4. Push to the branch (`git push origin feature/improvement`)
 5. Open a Pull Request
                                                                                                        
-## Author                                                                                                    
-                                                                                                        **Lasha Japaridze**
+## Author                                                                                                                                                                                                          **Lasha Japaridze**
                                                                                                         - Email: lashajaparidze@gmail.com
 - - GitHub: [@LashaJaparidze15](https://github.com/LashaJaparidze15)
 - - Location: Carlow, Ireland
